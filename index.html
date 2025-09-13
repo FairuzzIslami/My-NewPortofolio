@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portofolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="light-mode">
+    <nav>
+        <h1>MyPortofolio.</h1>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#experience">experience</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#achiev">achiev</a></li>
+            <li>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+                    <!-- Sun -->
+                    <svg xmlns="http://www.w3.org/2000/svg" id="iconSun" viewBox="0 0 24 24">
+                        <path d="M12 18a6 6 0 100-12 6 6 0 000 12z" />
+                        <path
+                            d="M12 4V2m0 20v-2m8-8h2M2 12h2m14.95 6.95l1.414 1.414M4.636 4.636l1.414 1.414m12.728 0l1.414-1.414M4.636 19.364l1.414-1.414" />
+                    </svg>
+                    <!-- Moon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" id="iconMoon" viewBox="0 0 24 24" style="display:none">
+                        <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" />
+                    </svg>
+                </button>
+            </li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <section class="home">
+        <div class="home-left">
+            <h1>
+                <span id="typing"></span><span class="cursor">|</span>
+            </h1>
+            <p>Siswa SMK RPL dengan keahlian PHP & Laravel. Pernah mewakili Boyolali di LKS Web Technologies tingkat
+                provinsi dan kini PKL di CV Seven Smart Indonesia fokus pada pengembangan web.</p>
+
+            <div class="social-links">
+                <a href="https://github.com/FairuzzIslami" target="_blank" class="social github"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/fairuz-islami-a354102b9/" target="_blank"
+                    class="social linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a href="./cv/Cv-FairuzAqila.pdf" target="_blank" class="social cv" title="Lihat CV">
+                    <i class="fas fa-file-alt"></i>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=fairuzworkspace@gmail.com" target="_blank"
+                        class="social email" title="Kirim Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+
+
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="cta-buttons">
+                <a href="#portfolio" class="btn btn-primary">Lihat Portofolio</a>
+                <a href="fairuzworkspace@gmail.com" class="btn btn-outline">Hubungi Saya</a>
+            </div>
+        </div>
+
+        <div class="home-right">
+            <div class="img-wrapper">
+                <img src="./img/pp.jpg" alt="Foto Fairuz">
+            </div>
+        </div>
+    </section>
+</body>
+<script src="./main.js"></script>
+</html>

@@ -1,0 +1,279 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial, sans-serif;
+transition: background 0.3s, color 0.3s;
+}
+
+/* Mode terang */
+body.light-mode {
+background: #ffffff;
+color: #222222;
+}
+
+/* Mode gelap */
+body.dark-mode {
+background: #121212;
+color: #f5f5f5;
+}
+
+/* Navbar */
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 25px 20px;
+position: sticky;
+top: 0;
+background: inherit;
+z-index: 100;
+}
+
+nav h1 {
+font-size: 1.3rem;
+font-weight: bold;
+}
+
+.nav-links {
+display: flex;
+gap: 24px;
+list-style: none;
+align-items: center;
+}
+
+.nav-links a {
+text-decoration: none;
+font-size: 0.95rem;
+font-weight: 500;
+color: inherit;
+transition: color 0.3s;
+}
+
+.nav-links a:hover {
+color: #0077ff;
+}
+
+/* Toggle tema */
+.theme-toggle {
+background: none;
+border: none;
+cursor: pointer;
+}
+
+.theme-toggle svg {
+width: 22px;
+height: 22px;
+}
+
+body.light-mode .theme-toggle svg {
+fill: black;
+}
+
+body.dark-mode .theme-toggle svg {
+fill: white;
+}
+
+/* Tombol hamburger */
+.hamburger {
+display: none;
+flex-direction: column;
+cursor: pointer;
+gap: 4px;
+}
+
+.hamburger span {
+width: 24px;
+height: 3px;
+background: currentColor;
+border-radius: 2px;
+transition: 0.3s;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+.nav-links {
+display: none;
+flex-direction: column;
+gap: 16px;
+position: absolute;
+top: 60px;
+right: 20px;
+background: inherit;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links.active {
+display: flex;
+}
+
+.hamburger {
+display: flex;
+}
+}
+
+/* Home Section */
+.home {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 80px 10%;
+min-height: 100vh;
+}
+
+.home-left {
+flex: 1;
+}
+
+.home-left h1 {
+font-size: 2rem;
+margin-bottom: 10px;
+}
+
+.home-left span {
+color: #0077ff;
+}
+
+.home-left p {
+font-size: 1rem;
+color: #555;
+}
+
+.home-right {
+flex: 1;
+display: flex;
+justify-content: center;
+}
+
+.home-right img {
+width: 280px;
+border-radius: 40%;
+border: 5px solid #0077ff;
+transition: filter 0.5s ease; 
+filter: grayscale(100%);   
+}
+.home-right img:hover {
+  filter: grayscale(0%);      
+}
+/* Responsive */
+@media (max-width: 768px) {
+.home {
+flex-direction: column;
+text-align: center;
+}
+
+.home-right {
+margin-top: 20px;
+}
+}
+/* Typing Effect */
+.cursor {
+  display: inline-block;
+  margin-left: 3px;
+  width: 2px;
+  background: currentColor;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+/* Foto modern */
+.img-wrapper {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  padding: 5px;
+  background: linear-gradient(135deg, #0077ff, #66aaff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 20px rgba(0, 119, 255, 0.3);
+  transition: transform 0.3s;
+}
+
+.img-wrapper:hover {
+  transform: scale(1.05);
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  object-fit: cover;
+}
+
+/* Dark mode foto */
+body.dark-mode .img-wrapper {
+  background: linear-gradient(135deg, #66aaff, #004488);
+  box-shadow: 0 8px 20px rgba(102, 170, 255, 0.4);
+}
+.cta-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background: #4f46e5; 
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #3730a3;
+}
+
+.btn-outline {
+  border: 2px solid #4f46e5;
+  color: #4f46e5;
+}
+
+.btn-outline:hover {
+  background: #4f46e5;
+  color: white;
+}
+.social-links {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.social.github { background: #333; }        
+.social.linkedin { background: #0077b5; }   /* biru LinkedIn */
+.social.cv { background: #4f46e5; }         /* ungu indigo untuk CV */
+.social.email { background: #d93025; }      /* merah khas Gmail */
+
+
+.social:hover {
+  transform: scale(1.1);
+  opacity: 0.85;
+}
