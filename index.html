@@ -7,15 +7,18 @@
     <title>My Portofolio</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
 </head>
 
 <body class="light-mode">
     <nav>
         <h1>MyPortofolio.</h1>
         <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#portfolio">projects</a></li>
             <li><a href="#experience">experience</a></li>
-            <li><a href="#projects">projects</a></li>
-            <li><a href="#achiev">achiev</a></li>
+            <li><a href="#achievement">achiev</a></li>
             <li>
                 <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
                     <!-- Sun -->
@@ -35,10 +38,11 @@
             <span></span>
             <span></span>
             <span></span>
+            <span></span>
         </div>
     </nav>
 
-    <section class="home">
+    <section class="home" id="home">
         <div class="home-left">
             <h1>
                 <span id="typing"></span><span class="cursor">|</span>
@@ -53,18 +57,13 @@
                     class="social linkedin"><i class="fab fa-linkedin-in"></i></a>
                 <a href="./cv/Cv-FairuzAqila.pdf" target="_blank" class="social cv" title="Lihat CV">
                     <i class="fas fa-file-alt"></i>
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=fairuzworkspace@gmail.com" target="_blank"
-                        class="social email" title="Kirim Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-
-
+                </a>
             </div>
 
             <!-- CTA Buttons -->
             <div class="cta-buttons">
-                <a href="#portfolio" class="btn btn-primary">Lihat Portofolio</a>
-                <a href="fairuzworkspace@gmail.com" class="btn btn-outline">Hubungi Saya</a>
+                <a href="#portfolio" class="btn btn-primary">View Projects</a>
+                <a href="fairuzworkspace@gmail.com" class="btn btn-outline">Contact Me</a>
             </div>
         </div>
 
@@ -74,6 +73,197 @@
             </div>
         </div>
     </section>
+
+    <section class="portfolio" id="portfolio">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="project">
+            <h3>School Attendance Website</h3>
+            <a href="https://github.com/FairuzzIslami/Absensi-laravel10" target="_blank" class="live-link">
+                live preview <i class="fas fa-arrow-up-right-from-square"></i>
+            </a>
+            <ul>
+                <li>Web-based attendance system for schools with multi-role login feature (admin, teacher, student).
+                </li>
+                <li>Main features: attendance code, attendance history, and user data management.</li>
+            </ul>
+            <div class="tags">
+                <span>Laravel</span>
+                <span>Bootstrap</span>
+                <span>AOS Init</span>
+                <span>SweetAlert2</span>
+                <span>J-Query</span>
+                <span>Mysql</span>
+            </div>
+        </div>
+
+        <div class="project">
+            <h3>Islamic Boarding School Website</h3>
+            <a href="https://github.com/FairuzzIslami/webPesantren-laravel10" target="_blank" class="live-link">
+                live preview <i class="fas fa-arrow-up-right-from-square"></i>
+            </a>
+            <ul>
+                <li>Islamic boarding school portal website that displays news, Islamic articles, and information on
+                    student activities.</li>
+                <li>Main features: news management, article categories, Islamic boarding school profile page, and
+                    activity gallery.</li>
+            </ul>
+            <div class="tags">
+                <span>Laravel</span>
+                <span>Bootstrap</span>
+                <span>Aos Init</span>
+                <span>Mysql</span>
+            </div>
+        </div>
+
+        <div class="project">
+            <h3>Mamaci Home Industry Web</h3>
+            <a href="https://github.com/FairuzzIslami/WebMamaciHomeIndustri" target="_blank" class="live-link">
+                live preview <i class="fas fa-arrow-up-right-from-square"></i>
+            </a>
+            <ul>
+                <li>Create a mamaci landing page website containing product information.</li>
+                <li>Main features: product showcase, business description, and WhatsApp contact.</li>
+            </ul>
+            <div class="tags">
+                <span>Html</span>
+                <span>Bootstrap 5</span>
+                <span>JavaScript</span>
+            </div>
+        </div>
+
+        <div class="view-all">
+            <a href="https://github.com/FairuzzIslami" target="_blank" class="btn btn-outline">View all projects</a>
+        </div>
+    </section>
+
+    <section class="experience" id="experience">
+        <h2>Experience</h2>
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">Juli 2025 - November 2025</span>
+                    <h3>CV Seven Smart Indonesia</h3>
+                    <span class="time">2025 - Internship</span>
+                    <p>Web Developer Intern dengan fokus pada pengembangan aplikasi berbasis Laravel dan integrasi API.
+                    </p>
+                    <div class="tags">
+                        <span>Laravel</span>
+                        <span>PHP</span>
+                        <span>API</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">Mei 2024</span>
+                    <h3>LKS Web Technologies</h3>
+                    <span class="time">2024 - Competition</span>
+                    <p>Mewakili Kabupaten Boyolali di LKS Web Technologies tingkat provinsi Jawa Tengah.</p>
+                    <div class="tags">
+                        <span>React Js</span>
+                        <span>API</span>
+                        <span>UI/UX</span>
+                        <span>Laravel</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="achievement" id="achievement">
+        <h2>Achievements</h2>
+        <div class="achievements-grid">
+
+            <!-- Card 1 -->
+            <div class="achievement-card">
+                <div class="achievement-header">
+                    <h3>Juara 1 LKS Web Technologies</h3>
+                    <span class="date">April 2025</span>
+                </div>
+                <p>Mewakili Sekolah SMK MUHAMMDIYAH 04 BOYOLALI dalam bidang Web Technologies Kabupaten boyolali.</p>
+                <button class="btn-detail" onclick="openModal('modal1')">Lihat Detail</button>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="achievement-card">
+                <div class="achievement-header">
+                    <h3>RevoU Fundamental Course</h3>
+                    <span class="date">Juli 2025</span>
+                </div>
+                <p>Mengembangkan Fundamental Course sebagai software engineering.</p>
+                <button class="btn-detail" onclick="openModal('modal2')">Lihat Detail</button>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="achievement-card">
+                <div class="achievement-header">
+                    <h3>IMPHNEN Sertifikat</h3>
+                    <span class="date">Juli 2025</span>
+                </div>
+                <p>Mengembangkan knowledge ngoding dengan cara scroll fesnuk.</p>
+                <button class="btn-detail" onclick="openModal('modal3')">Lihat Detail</button>
+            </div>
+        </div>
+
+        <!-- Modal Sertifikat 1 -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal1')">&times;</span>
+                <h3>Juara 1 LKS Web Technologies</h3>
+                <p>Menjuarai LKS Web Technologies di Kabupaten boyolali.</p>
+                <img src="./img/LksKabupaten.jpeg" alt="Sertifikat LKS">
+            </div>
+        </div>
+
+
+        <!-- Modal Sertifikat 2 -->
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal2')">&times;</span>
+                <h3>RevoU Fundamental Course</h3>
+                <p>Mempelajari Fundamental-fundamental software engineering.</p>
+                <img src="./img/Revou.jpg" alt="Sertifikat Hackathon">
+            </div>
+        </div>
+
+        <!-- Modal Sertifikat 3 -->
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal3')">&times;</span>
+                <h3>Ingin Menjadi Programmer Handal Namun Enggan Ngoding</h3>
+                <p>Lebih Memilih Scroll Fesnuk Ketimbang Ngoding.</p>
+                <img src="./img/Imphen.png" alt="Sertifikat imphen">
+            </div>
+        </div>
+    </section>
+
+    <section class="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-list">
+            <p><strong>Languages:</strong> HTML, CSS, JavaScript , PHP</p>
+            <p><strong>Frameworks:</strong> Laravel, React.js</p>
+            <p><strong>Libraries:</strong> Bootstrap, SweetAlert2 , Aos Init , J-Query</p>
+            <p><strong>Database & Backend:</strong> MySQL, PostgreSQL</p>
+            <p><strong>Cloud & Deployment:</strong> Vercel , GitHub Pages</p>
+            <p><strong>Tools & Platforms:</strong> Git, GitHub, Visual Studio Code , Postman</p>
+        </div>
+    </section>
+
+    <button id="backToTop" title="Kembali ke atas">
+        <svg class="progress-ring" width="50" height="50">
+            <circle class="progress-ring__circle" stroke-width="4" fill="transparent" r="20" cx="25" cy="25" />
+        </svg>
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
 </body>
 <script src="./main.js"></script>
+
 </html>

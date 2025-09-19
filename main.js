@@ -68,3 +68,54 @@ function typeWriter() {
 
 window.addEventListener("DOMContentLoaded", typeWriter);
 
+// modal
+function openModal(id) {
+  document.getElementById(id).style.display = "flex";
+}
+
+function closeModal(id) {
+  document.getElementById(id).style.display = "none";
+}
+
+// Tutup modal kalau klik luar area
+window.addEventListener("click", function(e) {
+  document.querySelectorAll(".modal").forEach(modal => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+});
+
+const backToTopBtn = document.getElementById("backToTop");
+const circle = document.querySelector(".progress-ring__circle");
+const radius = circle.r.baseVal.value;
+const circumference = 2 * Math.PI * radius;
+
+// inisialisasi lingkaran
+circle.style.strokeDasharray = `${circumference} ${circumference}`;
+circle.style.strokeDashoffset = circumference;
+
+// tampilkan tombol + update progress saat scroll
+window.addEventListener("scroll", () => {
+  const scrollTop = window.scrollY;
+  const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const scrollPercent = scrollTop / scrollHeight;
+
+  const offset = circumference - scrollPercent * circumference;
+  circle.style.strokeDashoffset = offset;
+
+  if (scrollTop > 300) {
+    backToTopBtn.style.display = "flex";
+  } else {
+    backToTopBtn.style.display = "none";
+  }
+});
+
+// klik tombol -> smooth scroll ke atas
+backToTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+
