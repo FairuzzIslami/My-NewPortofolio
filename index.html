@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Fairuz</title>
+    <title>Fairuz Aqila Islami | Portofolio</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -42,32 +42,27 @@
 
     <section class="home" id="home">
         <div class="home-left">
-            <h1>
+            <p class="hero-greet">hi there 👋, I'm</p>
+            <h1 class="hero-name">
                 <span id="typing"></span><span class="cursor">|</span>
             </h1>
-            <p>Siswa SMK RPL dengan keahlian PHP & Laravel. Pernah mewakili Boyolali di LKS Web Technologies tingkat
-                provinsi dan kini PKL di CV Seven Smart Indonesia fokus pada pengembangan web.</p>
+            <p class="hero-sub">Siswa Smk Muhammdiyah 04 Boyolali, RPL</p>
+            <p class="hero-desc">Siswa SMK jurusan Rekayasa Perangkat Lunak yang menguasai PHP dan Laravel untuk
+                pengembangan aplikasi web. Memiliki pengalaman mengikuti LKS Web Technologies hingga mewakili Kabupaten
+                Boyolali di tingkat provinsi. Saat ini sedang menjalani Praktik Kerja Lapangan di CV Seven Smart
+                Indonesia dengan fokus pada pengembangan web.</p>
 
-            <div class="social-links">
-                <a href="https://github.com/FairuzzIslami" target="_blank" class="social github"><i
-                        class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/fairuz-islami-a354102b9/" target="_blank"
-                    class="social linkedin"><i class="fab fa-linkedin-in"></i></a>
-                <a href="./cv/Cv-FairuzAqila.pdf" target="_blank" class="social cv" title="Lihat CV">
-                    <i class="fas fa-file-alt"></i>
-                </a>
-            </div>
+            <div class="hero-action-area">
+                <a href="./cv/Cv-FairuzAqila.pdf" target="_blank" class="btn btn-resume">Resume</a>
 
-            <!-- CTA Buttons -->
-            <div class="cta-buttons">
-                <a href="#portfolio" class="btn btn-primary">View Projects</a>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=fairuzworkspace@gmail.com" target="_blank" class="btn btn-outline">Contact Me</a>
-            </div>
-        </div>
-
-        <div class="home-right">
-            <div class="img-wrapper">
-                <img src="./img/pp.jpg" alt="Foto Fairuz">
+                <div class="social-links">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=fairuzworkspace@gmail.com" target="_blank"
+                        class="social" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/FairuzzIslami" target="_blank" class="social" title="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/fairuz-islami-a354102b9/" target="_blank" class="social"
+                        title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
             </div>
         </div>
     </section>
@@ -101,8 +96,10 @@
                 live preview <i class="fas fa-arrow-up-right-from-square"></i>
             </a>
             <ul>
-                <li>Situs web portal pesantren yang menampilkan berita, artikel keislaman, dan informasi kegiatan santri.</li>
-                <li>Fitur utama: manajemen berita, kategori artikel, halaman profil pesantren, dan galeri aktivitas.</li>
+                <li>Situs web portal pesantren yang menampilkan berita, artikel keislaman, dan informasi kegiatan
+                    santri.</li>
+                <li>Fitur utama: manajemen berita, kategori artikel, halaman profil pesantren, dan galeri aktivitas.
+                </li>
             </ul>
             <div class="tags">
                 <span>Laravel</span>
@@ -173,41 +170,44 @@
     </section>
 
     <section class="achievement" id="achievement">
-        <h2>Achievements</h2>
+        <h2 class="section-title">Achievements</h2>
         <div class="achievements-grid">
 
-            <!-- Card 1 -->
             <div class="achievement-card">
-                <div class="achievement-header">
-                    <h3>Juara 1 LKS Web Technologies</h3>
-                    <span class="date">April 2025</span>
+                <div class="container-card-content">
+                    <div class="achievement-header">
+                        <h3>Juara 1 LKS Web Technologies</h3>
+                        <span class="date">April 2025</span>
+                    </div>
+                    <p>Mewakili Sekolah SMK MUHAMMADIYAH 04 BOYOLALI dalam bidang Web Technologies Kabupaten Boyolali.
+                    </p>
                 </div>
-                <p>Mewakili Sekolah SMK MUHAMMDIYAH 04 BOYOLALI dalam bidang Web Technologies Kabupaten boyolali.</p>
                 <button class="btn-detail" onclick="openModal('modal1')">Lihat Detail</button>
             </div>
 
-            <!-- Card 2 -->
             <div class="achievement-card">
-                <div class="achievement-header">
-                    <h3>RevoU Fundamental Course</h3>
-                    <span class="date">Juli 2025</span>
+                <div class="container-card-content">
+                    <div class="achievement-header">
+                        <h3>RevoU Fundamental Course</h3>
+                        <span class="date">Juli 2025</span>
+                    </div>
+                    <p>Mengembangkan Fundamental Course sebagai software engineering.</p>
                 </div>
-                <p>Mengembangkan Fundamental Course sebagai software engineering.</p>
                 <button class="btn-detail" onclick="openModal('modal2')">Lihat Detail</button>
             </div>
 
-            <!-- Card 3 -->
             <div class="achievement-card">
-                <div class="achievement-header">
-                    <h3>IMPHNEN Sertifikat</h3>
-                    <span class="date">Juli 2025</span>
+                <div class="container-card-content">
+                    <div class="achievement-header">
+                        <h3>IMPHNEN Sertifikat</h3>
+                        <span class="date">Juli 2025</span>
+                    </div>
+                    <p>Mengembangkan knowledge ngoding dengan cara scroll fesnuk.</p>
                 </div>
-                <p>Mengembangkan knowledge ngoding dengan cara scroll fesnuk.</p>
                 <button class="btn-detail" onclick="openModal('modal3')">Lihat Detail</button>
             </div>
         </div>
 
-        <!-- Modal Sertifikat 1 -->
         <div id="modal1" class="modal">
             <div class="modal-content">
                 <span class="close" onclick="closeModal('modal1')">&times;</span>
@@ -217,8 +217,6 @@
             </div>
         </div>
 
-
-        <!-- Modal Sertifikat 2 -->
         <div id="modal2" class="modal">
             <div class="modal-content">
                 <span class="close" onclick="closeModal('modal2')">&times;</span>
@@ -228,7 +226,6 @@
             </div>
         </div>
 
-        <!-- Modal Sertifikat 3 -->
         <div id="modal3" class="modal">
             <div class="modal-content">
                 <span class="close" onclick="closeModal('modal3')">&times;</span>
@@ -251,13 +248,21 @@
         </div>
     </section>
 
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 <strong>Fairuz Aqila.</strong> All rights reserved.</p>
+            <p class="footer-tagline">Built with passion</p>
+        </div>
+    </footer>
+    
     <button id="backToTop" title="Kembali ke atas">
         <svg class="progress-ring" width="50" height="50">
             <circle class="progress-ring__circle" stroke-width="4" fill="transparent" r="20" cx="25" cy="25" />
         </svg>
-        <i class="fas fa-arrow-up"></i>
+        <i class="fas fa-chevron-up"></i>
     </button>
 
 </body>
 <script src="./main.js"></script>
+
 </html>

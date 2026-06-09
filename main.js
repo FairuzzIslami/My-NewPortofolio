@@ -35,7 +35,7 @@ hamburger.addEventListener("click", () => {
 });
 
 // typing
-const text = "Hello, nama saya Fairuz Aqila Islami";
+const text = "Fairuz Aqila Islami";
 const typingElement = document.getElementById("typing");
 
 let i = 0;
