@@ -47,14 +47,13 @@
                 <span id="typing"></span><span class="cursor">|</span>
             </h1>
             <p class="hero-sub">Siswa Smk Muhammdiyah 04 Boyolali, RPL</p>
-            <p class="hero-desc">Siswa SMK jurusan Rekayasa Perangkat Lunak yang menguasai PHP dan Laravel untuk
-                pengembangan aplikasi web. Memiliki pengalaman mengikuti LKS Web Technologies hingga mewakili Kabupaten
-                Boyolali di tingkat provinsi. Saat ini sedang menjalani Praktik Kerja Lapangan di CV Seven Smart
-                Indonesia dengan fokus pada pengembangan web.</p>
+            <p class="hero-desc">Siswa SMK Rekayasa Perangkat Lunak dengan fokus pada pengembangan aplikasi web
+                menggunakan PHP dan Laravel. Berpengalaman mengikuti LKS Web Technologies tingkat Provinsi Jawa Tengah
+                serta mengembangkan berbagai proyek selama praktik kerja industri.</p>
 
             <div class="hero-action-area">
                 <a href="./cv/Cv-FairuzAqila.pdf" target="_blank" class="btn btn-resume">Resume</a>
-
+                <div class="hero-stats">
                 <div class="social-links">
                     <a href="https://mail.google.com/mail/?view=cm&fs=1&to=fairuzworkspace@gmail.com" target="_blank"
                         class="social" title="Email"><i class="fas fa-envelope"></i></a>
@@ -155,7 +154,7 @@
                 <div class="timeline-content">
                     <span class="date">Mei 2025</span>
                     <h3>LKS Web Technologies</h3>
-                    <span class="time">2024 - Competition</span>
+                    <span class="time">2025 - Competition</span>
                     <p>Mewakili Kabupaten Boyolali di LKS Web Technologies tingkat provinsi Jawa Tengah.</p>
                     <div class="tags">
                         <span>React Js</span>
@@ -172,6 +171,18 @@
     <section class="achievement" id="achievement">
         <h2 class="section-title">Achievements</h2>
         <div class="achievements-grid">
+
+            <div class="achievement-card">
+                <div class="container-card-content">
+                    <div class="achievement-header">
+                        <h3>Praktek Kerja Lapangan</h3>
+                        <span class="date">Juli 2025</span>
+                    </div>
+                    <p>Menjalani praktek kerja Lapangan (PKL) di CV Seven Smart Indonesia
+                    </p>
+                </div>
+                <button class="btn-detail" onclick="openModal('modal3')">Lihat Detail</button>
+            </div>
 
             <div class="achievement-card">
                 <div class="container-card-content">
@@ -196,44 +207,33 @@
                 <button class="btn-detail" onclick="openModal('modal2')">Lihat Detail</button>
             </div>
 
-            <div class="achievement-card">
-                <div class="container-card-content">
-                    <div class="achievement-header">
-                        <h3>IMPHNEN Sertifikat</h3>
-                        <span class="date">Juli 2025</span>
-                    </div>
-                    <p>Mengembangkan knowledge ngoding dengan cara scroll fesnuk.</p>
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal1')">&times;</span>
+                    <h3>Juara 1 LKS Web Technologies</h3>
+                    <p>Menjuarai LKS Web Technologies di Kabupaten boyolali.</p>
+                    <img src="./img/LksKabupaten.jpeg" alt="Sertifikat LKS">
                 </div>
-                <button class="btn-detail" onclick="openModal('modal3')">Lihat Detail</button>
             </div>
-        </div>
 
-        <div id="modal1" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal('modal1')">&times;</span>
-                <h3>Juara 1 LKS Web Technologies</h3>
-                <p>Menjuarai LKS Web Technologies di Kabupaten boyolali.</p>
-                <img src="./img/LksKabupaten.jpeg" alt="Sertifikat LKS">
+            <div id="modal2" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal2')">&times;</span>
+                    <h3>RevoU Fundamental Course</h3>
+                    <p>Mempelajari Fundamental-fundamental software engineering.</p>
+                    <img src="./img/Revou.jpg" alt="Sertifikat Hackathon">
+                </div>
             </div>
-        </div>
+            <div id="modal3" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal3')">&times;</span>
+                    <h3>CV.Seven Smarts Indonesia</h3>
+                    <p>Mempelajari Cara kerja industri khususnya di bidang teknologi menggunakan laravel dan Codigniter
+                    </p>
+                    <img src="./img/pklSertifikat.jpg" alt="Sertifikat Pkl">
+                </div>
+            </div>
 
-        <div id="modal2" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal('modal2')">&times;</span>
-                <h3>RevoU Fundamental Course</h3>
-                <p>Mempelajari Fundamental-fundamental software engineering.</p>
-                <img src="./img/Revou.jpg" alt="Sertifikat Hackathon">
-            </div>
-        </div>
-
-        <div id="modal3" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal('modal3')">&times;</span>
-                <h3>Ingin Menjadi Programmer Handal Namun Enggan Ngoding</h3>
-                <p>Lebih Memilih Scroll Fesnuk Ketimbang Ngoding.</p>
-                <img src="./img/Imphen.png" alt="Sertifikat imphen">
-            </div>
-        </div>
     </section>
 
     <section class="skills">
@@ -254,7 +254,7 @@
             <p class="footer-tagline">Built with passion</p>
         </div>
     </footer>
-    
+
     <button id="backToTop" title="Kembali ke atas">
         <svg class="progress-ring" width="50" height="50">
             <circle class="progress-ring__circle" stroke-width="4" fill="transparent" r="20" cx="25" cy="25" />
