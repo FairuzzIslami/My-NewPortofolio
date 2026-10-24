@@ -11,12 +11,13 @@
 
 <body class="dark-mode">
     <nav>
-        <h1>MyPortofolio.</h1>
+        <a href="#home" class="logo">MyPortofolio<span>.</span></a>
         <ul class="nav-links" id="navLinks">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#portfolio">projects</a></li>
-            <li><a href="#experience">experience</a></li>
-            <li><a href="#achievement">achiev</a></li>
+            <li><a href="#home" class="nav-item active">Home</a></li>
+            <li><a href="#portfolio" class="nav-item">Projects</a></li>
+            <li><a href="#experience" class="nav-item">Experience</a></li>
+            <li><a href="#achievement" class="nav-item">Achievements</a></li>
+            <li><a href="#skills" class="nav-item">Skills</a></li>
             <li>
                 <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
                     <!-- Sun -->
@@ -36,120 +37,145 @@
             <span></span>
             <span></span>
             <span></span>
-            <span></span>
         </div>
     </nav>
 
     <section class="home" id="home">
-        <div class="home-left">
-            <p class="hero-greet">hi there 👋, I'm</p>
-            <h1 class="hero-name">
-                <span id="typing"></span><span class="cursor">|</span>
-            </h1>
-            <p class="hero-sub">Mahasiswa Politeknik Negeri Batam, Teknologi Rekayasa Perangkat Lunak</p>
+        <div class="home-container">
+            <div class="home-left">
+                <p class="hero-greet">hi there 👋, I'm</p>
+                <h1 class="hero-name">
+                    <span id="typing"></span><span class="cursor">|</span>
+                </h1>
+                <p class="hero-sub">Mahasiswa Politeknik Negeri Batam, Teknologi Rekayasa Perangkat Lunak</p>
 
-            <p class="hero-desc">
-                Mahasiswa Teknologi Rekayasa Perangkat Lunak dengan fokus pada
-                pengembangan aplikasi web, khususnya di bidang backend development
-                menggunakan PHP dan Laravel. Memiliki pengalaman dalam membangun
-                dan mengembangkan berbagai proyek web serta memiliki ketertarikan
-                pada pengembangan sistem yang terstruktur, efisien, dan scalable.
-            </p>
+                <p class="hero-desc">
+                    Mahasiswa Teknologi Rekayasa Perangkat Lunak dengan fokus pada
+                    pengembangan aplikasi web, khususnya di bidang backend development
+                    menggunakan PHP dan Laravel. Memiliki pengalaman dalam membangun
+                    dan mengembangkan berbagai proyek web serta memiliki ketertarikan
+                    pada pengembangan sistem yang terstruktur, efisien, dan scalable.
+                </p>
 
-            <div class="hero-action-area">
-                <a href="./cv/Cv-FairuzAqila.pdf" target="_blank" class="btn btn-resume">Resume</a>
-                <div class="hero-stats">
-                    <div class="social-links">
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=fairuzworkspace@gmail.com"
-                            target="_blank" class="social" title="Email"><i class="fas fa-envelope"></i></a>
-                        <a href="https://github.com/FairuzzIslami" target="_blank" class="social" title="GitHub"><i
-                                class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/fairuz-islami-a354102b9/" target="_blank" class="social"
-                            title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <div class="hero-action-area">
+                    <a href="./cv/Cv-FairuzAqila.pdf" target="_blank" class="btn btn-resume">Resume</a>
+                    <div class="hero-stats">
+                        <div class="social-links">
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=fairuzworkspace@gmail.com"
+                                target="_blank" class="social" title="Email"><i class="fas fa-envelope"></i></a>
+                            <a href="https://github.com/FairuzzIslami" target="_blank" class="social" title="GitHub"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/fairuz-islami-a354102b9/" target="_blank" class="social"
+                                title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
+            
+            <div class="home-right">
+                <div class="avatar-wrapper">
+                    <div class="avatar-box">
+                        <i class="fas fa-code avatar-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="portfolio" id="portfolio">
-        <h2 class="section-title">Projects</h2>
-
-        <div class="project">
-            <h3>School Attendance Website</h3>
-            <a href="https://github.com/FairuzzIslami/Absensi-laravel10" target="_blank" class="live-link">
-                live preview <i class="fas fa-arrow-up-right-from-square"></i>
-            </a>
-            <ul>
-                <li>Sistem kehadiran berbasis web untuk sekolah dengan fitur login multi-peran (admin, guru, siswa).
-                </li>
-                <li>Fitur utama: kode kehadiran, riwayat kehadiran, dan manajemen data pengguna.</li>
-            </ul>
-            <div class="tags">
-                <span>Laravel</span>
-                <span>Bootstrap</span>
-                <span>AOS Init</span>
-                <span>SweetAlert2</span>
-                <span>J-Query</span>
-                <span>Mysql</span>
+        <div class="section-header">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="laravel">Laravel</button>
+                <button class="filter-btn" data-filter="javascript">JavaScript / React</button>
             </div>
         </div>
 
-        <div class="project">
-            <h3>Islamic Boarding School Website</h3>
-            <a href="https://github.com/FairuzzIslami/webPesantren-laravel10" target="_blank" class="live-link">
-                live preview <i class="fas fa-arrow-up-right-from-square"></i>
-            </a>
-            <ul>
-                <li>Situs web portal pesantren yang menampilkan berita, artikel keislaman, dan informasi kegiatan
-                    santri.</li>
-                <li>Fitur utama: manajemen berita, kategori artikel, halaman profil pesantren, dan galeri aktivitas.
-                </li>
-            </ul>
-            <div class="tags">
-                <span>Laravel</span>
-                <span>Bootstrap</span>
-                <span>Aos Init</span>
-                <span>Mysql</span>
+        <div class="projects-grid">
+            <div class="project-card" data-category="laravel">
+                <div class="project-header">
+                    <h3>School Attendance Website</h3>
+                    <a href="https://github.com/FairuzzIslami/Absensi-laravel10" target="_blank" class="live-link">
+                        Live Preview <i class="fas fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+                <ul>
+                    <li>Sistem kehadiran berbasis web untuk sekolah dengan fitur login multi-peran (admin, guru, siswa).</li>
+                    <li>Fitur utama: kode kehadiran, riwayat kehadiran, dan manajemen data pengguna.</li>
+                </ul>
+                <div class="tags">
+                    <span>Laravel</span>
+                    <span>Bootstrap</span>
+                    <span>AOS Init</span>
+                    <span>SweetAlert2</span>
+                    <span>jQuery</span>
+                    <span>MySQL</span>
+                </div>
             </div>
-        </div>
 
-        <div class="project">
-            <h3>Mamaci Home Industry Web</h3>
-            <a href="https://github.com/FairuzzIslami/WebMamaciHomeIndustri" target="_blank" class="live-link">
-                live preview <i class="fas fa-arrow-up-right-from-square"></i>
-            </a>
-            <ul>
-                <li>Buat situs web halaman arahan mamaci yang berisi informasi produk.</li>
-                <li>Fitur utama: etalase produk, deskripsi bisnis, dan kontak WhatsApp.</li>
-            </ul>
-            <div class="tags">
-                <span>Html</span>
-                <span>Bootstrap 5</span>
-                <span>JavaScript</span>
+            <div class="project-card" data-category="laravel">
+                <div class="project-header">
+                    <h3>Islamic Boarding School Website</h3>
+                    <a href="https://github.com/FairuzzIslami/webPesantren-laravel10" target="_blank" class="live-link">
+                        Live Preview <i class="fas fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+                <ul>
+                    <li>Situs web portal pesantren yang menampilkan berita, artikel keislaman, dan informasi kegiatan santri.</li>
+                    <li>Fitur utama: manajemen berita, kategori artikel, halaman profil pesantren, dan galeri aktivitas.</li>
+                </ul>
+                <div class="tags">
+                    <span>Laravel</span>
+                    <span>Bootstrap</span>
+                    <span>AOS Init</span>
+                    <span>MySQL</span>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="javascript">
+                <div class="project-header">
+                    <h3>Mamaci Home Industry Web</h3>
+                    <a href="https://github.com/FairuzzIslami/WebMamaciHomeIndustri" target="_blank" class="live-link">
+                        Live Preview <i class="fas fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+                <ul>
+                    <li>Buat situs web halaman arahan mamaci yang berisi informasi produk.</li>
+                    <li>Fitur utama: etalase produk, deskripsi bisnis, dan kontak WhatsApp.</li>
+                </ul>
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>Bootstrap 5</span>
+                    <span>JavaScript</span>
+                </div>
             </div>
         </div>
 
         <div class="view-all">
-            <a href="https://github.com/FairuzzIslami" target="_blank" class="btn btn-outline">View all projects</a>
+            <a href="https://github.com/FairuzzIslami" target="_blank" class="btn btn-outline">
+                <i class="fab fa-github"></i> View all projects
+            </a>
         </div>
     </section>
 
     <section class="experience" id="experience">
-        <h2>Experience</h2>
+        <h2 class="section-title center">Experience</h2>
         <div class="timeline">
 
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <span class="date">Juli 2025 - November 2025</span>
-                    <h3>CV Seven Smart Indonesia</h3>
-                    <span class="time">2025 - Internship</span>
-                    <p>Web Developer Intern dengan fokus pada pengembangan aplikasi berbasis Laravel dan integrasi API.
-                    </p>
+                    <div class="timeline-header">
+                        <h3>CV Seven Smart Indonesia</h3>
+                        <span class="date">Juli 2025 - November 2025</span>
+                    </div>
+                    <span class="role-badge">Web Developer Intern</span>
+                    <p>Web Developer Intern dengan fokus pada pengembangan aplikasi berbasis Laravel dan integrasi API.</p>
                     <div class="tags">
                         <span>Laravel</span>
                         <span>PHP</span>
-                        <span>API</span>
+                        <span>REST API</span>
                     </div>
                 </div>
             </div>
@@ -157,13 +183,15 @@
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <span class="date">Mei 2025</span>
-                    <h3>LKS Web Technologies</h3>
-                    <span class="time">2025 - Competition</span>
+                    <div class="timeline-header">
+                        <h3>LKS Web Technologies</h3>
+                        <span class="date">Mei 2025</span>
+                    </div>
+                    <span class="role-badge">Provincial Competitor</span>
                     <p>Mewakili Kabupaten Boyolali di LKS Web Technologies tingkat provinsi Jawa Tengah.</p>
                     <div class="tags">
-                        <span>React Js</span>
-                        <span>API</span>
+                        <span>React.js</span>
+                        <span>REST API</span>
                         <span>UI/UX</span>
                         <span>Laravel</span>
                     </div>
@@ -174,7 +202,7 @@
     </section>
 
     <section class="achievement" id="achievement">
-        <h2 class="section-title">Achievements</h2>
+        <h2 class="section-title center">Achievements</h2>
         <div class="achievements-grid">
 
             <div class="achievement-card">
@@ -183,8 +211,7 @@
                         <h3>Praktek Kerja Lapangan</h3>
                         <span class="date">Juli 2025</span>
                     </div>
-                    <p>Menjalani praktek kerja Lapangan (PKL) di CV Seven Smart Indonesia
-                    </p>
+                    <p>Menjalani praktek kerja Lapangan (PKL) di CV Seven Smart Indonesia.</p>
                 </div>
                 <button class="btn-detail" onclick="openModal('modal3')">Lihat Detail</button>
             </div>
@@ -195,8 +222,7 @@
                         <h3>Juara 1 LKS Web Technologies</h3>
                         <span class="date">April 2025</span>
                     </div>
-                    <p>Mewakili Sekolah SMK MUHAMMADIYAH 04 BOYOLALI dalam bidang Web Technologies Kabupaten Boyolali.
-                    </p>
+                    <p>Mewakili SMK Muhammadiyah 04 Boyolali dalam bidang Web Technologies tingkat Kabupaten Boyolali.</p>
                 </div>
                 <button class="btn-detail" onclick="openModal('modal1')">Lihat Detail</button>
             </div>
@@ -212,62 +238,130 @@
                 <button class="btn-detail" onclick="openModal('modal2')">Lihat Detail</button>
             </div>
 
-            <div id="modal1" class="modal">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('modal1')">&times;</span>
-                    <h3>Juara 1 LKS Web Technologies</h3>
-                    <p>Menjuarai LKS Web Technologies di Kabupaten boyolali.</p>
-                    <img src="./img/LksKabupaten.jpeg" alt="Sertifikat LKS">
-                </div>
-            </div>
+        </div>
 
-            <div id="modal2" class="modal">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('modal2')">&times;</span>
-                    <h3>RevoU Fundamental Course</h3>
-                    <p>Mempelajari Fundamental-fundamental software engineering.</p>
-                    <img src="./img/Revou.jpg" alt="Sertifikat Hackathon">
-                </div>
+        <!-- Modals -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal1')">&times;</span>
+                <h3>Juara 1 LKS Web Technologies</h3>
+                <p>Menjuarai LKS Web Technologies di Kabupaten Boyolali.</p>
+                <img src="./img/LksKabupaten.jpeg" alt="Sertifikat LKS">
             </div>
-            <div id="modal3" class="modal">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('modal3')">&times;</span>
-                    <h3>CV.Seven Smarts Indonesia</h3>
-                    <p>Mempelajari Cara kerja industri khususnya di bidang teknologi menggunakan laravel dan Codigniter
-                    </p>
-                    <img src="./img/pklSertifikat.jpg" alt="Sertifikat Pkl">
-                </div>
-            </div>
+        </div>
 
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal2')">&times;</span>
+                <h3>RevoU Fundamental Course</h3>
+                <p>Mempelajari Fundamental-fundamental software engineering.</p>
+                <img src="./img/Revou.jpg" alt="Sertifikat RevoU">
+            </div>
+        </div>
+
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal3')">&times;</span>
+                <h3>CV. Seven Smart Indonesia</h3>
+                <p>Mempelajari cara kerja industri khususnya di bidang teknologi menggunakan Laravel dan CodeIgniter.</p>
+                <img src="./img/pklSertifikat.jpg" alt="Sertifikat PKL">
+            </div>
+        </div>
     </section>
 
-    <section class="skills">
-        <h2>Technical Skills</h2>
-        <div class="skills-list">
-            <p><strong>Languages:</strong> HTML, CSS, JavaScript , PHP</p>
-            <p><strong>Frameworks:</strong> Laravel, React.js</p>
-            <p><strong>Libraries:</strong> Bootstrap, SweetAlert2 , Aos Init , J-Query</p>
-            <p><strong>Database & Backend:</strong> MySQL, PostgreSQL</p>
-            <p><strong>Cloud & Deployment:</strong> Vercel , GitHub Pages</p>
-            <p><strong>Tools & Platforms:</strong> Git, GitHub, Visual Studio Code , Postman</p>
+    <section class="skills" id="skills">
+        <h2 class="section-title center">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <div class="skill-category-header">
+                    <i class="fas fa-code"></i>
+                    <h3>Languages</h3>
+                </div>
+                <div class="tags">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript (ES6+)</span>
+                    <span>PHP</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <div class="skill-category-header">
+                    <i class="fas fa-cubes"></i>
+                    <h3>Frameworks</h3>
+                </div>
+                <div class="tags">
+                    <span>Laravel</span>
+                    <span>React.js</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <div class="skill-category-header">
+                    <i class="fas fa-layer-group"></i>
+                    <h3>Libraries</h3>
+                </div>
+                <div class="tags">
+                    <span>Bootstrap</span>
+                    <span>SweetAlert2</span>
+                    <span>AOS Init</span>
+                    <span>jQuery</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <div class="skill-category-header">
+                    <i class="fas fa-database"></i>
+                    <h3>Database & Backend</h3>
+                </div>
+                <div class="tags">
+                    <span>MySQL</span>
+                    <span>PostgreSQL</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <div class="skill-category-header">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <h3>Cloud & Deployment</h3>
+                </div>
+                <div class="tags">
+                    <span>Vercel</span>
+                    <span>GitHub Pages</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <div class="skill-category-header">
+                    <i class="fas fa-tools"></i>
+                    <h3>Tools & Platforms</h3>
+                </div>
+                <div class="tags">
+                    <span>Git</span>
+                    <span>GitHub</span>
+                    <span>VS Code</span>
+                    <span>Postman</span>
+                </div>
+            </div>
         </div>
     </section>
 
     <footer>
         <div class="footer-content">
             <p>&copy; 2026 <strong>Fairuz Aqila.</strong> All rights reserved.</p>
-            <p class="footer-tagline">Built with passion</p>
+            <p class="footer-tagline">Built with passion & precision</p>
         </div>
     </footer>
 
+    <!-- Back to Top Button dengan SVG Circle Fix -->
     <button id="backToTop" title="Kembali ke atas">
         <svg class="progress-ring" width="50" height="50">
-            <circle class="progress-ring__circle" stroke-width="4" fill="transparent" r="20" cx="25" cy="25" />
+            <circle class="progress-ring__circle" stroke="#0077ff" stroke-width="4" fill="transparent" r="20" cx="25" cy="25" />
         </svg>
         <i class="fas fa-chevron-up"></i>
     </button>
 
+    <script src="./main.js"></script>
 </body>
-<script src="./main.js"></script>
 
 </html>
